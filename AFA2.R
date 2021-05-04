@@ -11,3 +11,4 @@ company<-as.data.frame(table(complaint$Company))
 names(company)<-c('company','company_frequency')
 complaint$Company<-factor(complaint$Company)
 complaint<-merge(complaint,company,by.x = 'Company',by.y = 'company')
+ 
